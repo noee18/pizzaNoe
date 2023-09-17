@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+}
+
+#maincontainer{
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.8)
+            ),
+            url(pizzaa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+h1 {
+    font-size: 3em;
+}
+
+header {
+    display: flex;
+    min-height: 60px;
+    justify-content: space-between;
+    /* background-color: rgb(0, 0, 0);  */
+    /* background-image: linear-gradient(270deg, #692701 1%, #1a1a1a 50%, #000000 100%); */
+    align-items: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav a {
+    font-weight: 600;
+    padding: 10px;
+    transition: 1s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #e44002;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 {
+    float: left;
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    transition: 0.8s;
+}
+
+.logo h2:hover{
+    color: #e44002;
+}
+
+.logo img {
+    height: 60px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 15rem;
+    /* height: 95vh; */
+    color: white;
+    /* background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.8)
+            ),
+            url(pizzaa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+}
+
+.main-nuevos {
+    font-weight: bold;
+    color: rgb(201, 71, 23);
+
+}
+
+button {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.096);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.815);
+    background-color: rgb(197, 63, 1);
+    margin-top: 2em;
+    text-transform: uppercase;
+}
+
+.main-nuevos {
+    
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 12ch;
+    animation: typing 2s steps(12), blink .6s infinite step-end alternate;
+    overflow:hidden;
+    }
+    
+    @keyframes typing {
+    from { width: 0}
+    }
+    
+    @keyframes blink {
+        50% { border-color: transparent}
+    }
+
+/* CARDS SABORES NUEVOS */
+
+#productos {
+    height: auto;
+    padding-top: 40px;
+}
+
+#headerproductos {
+    margin-bottom: 100px;
+}
+#headerproductos > h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+#headerproductos > p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+/* .container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+} */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 5px;
+    margin: 10px 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    margin-bottom: 150px;
+    flex: 50%;
+}
+.card > div {
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.card-image {
+    width: 400px;
+    height: 240px;
+}
+.card-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+.card-text {
+    margin: -30px auto;
+    margin-bottom: -50px;
+    height: 300px;
+    width: 300px;
+    background-color: #1d1c20;
+    color: #fff;
+    padding: 20px;
+}
+.card-meal-type {
+    font-style: italic;
+}
+.card-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.card-body {
+    font-size: 1.25rem;
+}
+.card-price {
+    width: 200px;
+    height: 100px;
+    background-color: #970c0a;
+    color: #fff;
+    margin-left: auto;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+#productos {
+    background-color: #ffffff;
+    height: auto;
+    margin: 5em;
+}
+
+.card-container {
+    display: flex;
+    margin: 10px;
+}
+
+.cards {
+    padding-bottom: 1.5em;
+    margin: 20px;
+    border-radius: 6px;
+    width: 30%;
+    border-radius: 1em;
+    box-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;
+    height: 500px;
+}
+
+.cards:hover {
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.6);
+    transform: translateY(-2%);
+}
+
+.cards img {
+    width: 100%;
+    height: 220px;
+}
+
+.cards .card__text {
+    font-weight: 500px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.cards .card__text p {
+    line-height: 1;
+    text-align: justify;
+    margin: 1em;
+}
+
+.cards .card__text h2 {
+    margin-top: 1.5em;
+}
+
+.cards .card__btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 0.5em;
+    text-align: center;
+    border: 1px solid rgb(3, 253, 199);
+    color: black;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.cards .card__btn:hover {
+    background-color: rgb(3, 253, 199);
+    color: #fff;
+} */
+
+/* CARDS PROMO */
+.ag-format-container {
+    width: 1442px;
+    margin: 0 auto;
+}
+
+#promos {
+    height: auto;
+    padding-top: 40px;
+    background-color: black;
+}
+
+#headerpromos {
+    margin-bottom: 50px;
+    color: white;
+}
+#headerpromos > h1 {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+#headerpromos > p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.ag-courses_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.ag-courses_item {
+    -ms-flex-preferred-size: calc(33.33333% - 30px);
+    flex-basis: calc(33.33333% - 30px);
+
+    margin: 0 15px 30px;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+}
+.ag-courses-item_link {
+    display: block;
+    padding: 30px 20px;
+    background-color: #121212;
+    overflow: hidden;
+    position: relative;
+}
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+    text-decoration: none;
+    color: #fff;
+}
+.ag-courses-item_link:hover .ag-courses-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+}
+.ag-courses-item_title {
+    min-height: 87px;
+    margin: 0 0 25px;
+
+    overflow: hidden;
+
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+
+    z-index: 2;
+    position: relative;
+}
+.ag-courses-item_date-box {
+    font-size: 18px;
+    color: #fff;
+
+    z-index: 2;
+    position: relative;
+}
+.ag-courses-item_date {
+    font-weight: bold;
+    color: #f9b234;
+
+    -webkit-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+}
+.ag-courses-item_bg {
+    height: 128px;
+    width: 128px;
+    background-color: #f9b234;
+
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+
+    border-radius: 50%;
+
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+    background-color: #3ecd5e;
+}
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+    background-color: #e44002;
+}
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+    background-color: #952aff;
+}
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+    background-color: #cd3e94;
+}
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+    background-color: #4c49ea;
+}
+
+@media only screen and (max-width: 979px) {
+    .ag-courses_item {
+        -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+    }
+    .ag-courses-item_title {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ag-format-container {
+        width: 96%;
+    }
+}
+@media only screen and (max-width: 639px) {
+    .ag-courses_item {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    .ag-courses-item_title {
+        min-height: 72px;
+        line-height: 1;
+
+        font-size: 18px;
+    }
+    .ag-courses-item_link {
+        padding: 22px 40px;
+    }
+    .ag-courses-item_date-box {
+        font-size: 16px;
+    }
+}
